@@ -7,9 +7,9 @@ Version: `NadekoBot v0.9.5958.34184`
 Command and aliases | Description | Usage
 ----------------|--------------|-------
 `.greet`  |  Enables or Disables anouncements on the current channel when someone joins the server.
-`.greetmsg`  |  Sets a new announce message. Type %user% if you want to mention the new member. |  .greetmsg Welcome to the server, %user%.
+`.greetmsg`  |  Sets a new announce message. Type %user% if you want to mention the new member. |  `.greetmsg Welcome to the server, %user%.`
 `.bye`  |  Enables or Disables anouncements on the current channel when someone leaves the server.
-`.byemsg`  |  Sets a new announce leave message. Type %user% if you want to mention the new member. |  .byemsg %user% has left the server.
+`.byemsg`  |  Sets a new announce leave message. Type %user% if you want to mention the new member. |  `.byemsg %user% has left the server.`
 `.byepm`  |  Toggles whether the good bye messages will be sent in a PM or in the text channel.
 `.greetpm`  |  Toggles whether the greet messages will be sent in a PM or in the text channel.
 `.spmom`  |  Toggles whether mentions of other offline users on your server will send a pm to them.
@@ -18,7 +18,7 @@ Command and aliases | Description | Usage
 `.voicepresence`  |  Toggles logging to this channel whenever someone joins or leaves a voice channel you are in right now. **Owner Only!**
 `.repeat`  |  Repeat a message every X minutes. If no parameters are specified, repeat is disabled. Requires manage messages.
 `.rotateplaying`, `.ropl`  |  Toggles rotation of playing status of the dynamic strings you specified earlier.
-`.addplaying`, `.adpl`  |  Adds a specified string to the list of playing strings to rotate. Supported placeholders: %servers%, %users%, %playing%, %queued%, %trivia%
+`.addplaying`, `.adpl`  |  Adds a specified string to the list of playing strings to rotate. Supported placeholders: `%servers%`, `%users%`, `%playing%`, `%queued%`, `%trivia%`
 `.listplaying`, `.lipl`  |  Lists all playing statuses with their corresponding number.
 `.removeplaying`, `.repl`, `.rmpl`  |  Removes a playing string on a given number.
 `.slowmode`  |  Toggles slow mode. When ON, users will be able to send only 1 message every 5 seconds.
@@ -29,18 +29,18 @@ Command and aliases | Description | Usage
 `.asar`  |  Adds a role, or list of roles separated by whitespace(use quotations for multiword roles) to the list of self-assignable roles. |  .asar Gamer
 `.rsar`  |  Removes a specified role from the list of self-assignable roles.
 `.lsar`  |  Lits all self-assignable roles.
-`.iam`  |  Adds a role to you that you choose. Role must be on a list of self-assignable roles. |  .iam Gamer
-`.iamn`, `.iamnot`  |  Removes a role to you that you choose. Role must be on a list of self-assignable roles. |  .iamn Gamer
+`.iam`  |  Adds a role to you that you choose. Role must be on a list of self-assignable roles. |  `.iam Gamer`
+`.iamn`, `.iamnot`  |  Removes a role to you that you choose. Role must be on a list of self-assignable roles. |  `.iamn Gamer`
 `.remind`  |  Sends a message to you or a channel after certain amount of time. First argument is me/here/'channelname'. Second argument is time in a descending order (mo>w>d>h>m) example: 1w5d3h10m. Third argument is a (multiword)message.  |  `.remind me 1d5h Do something` or `.remind #general Start now!`
-`.sinfo`, `.serverinfo`  |  Shows info about the server the bot is on. If no channel is supplied, it defaults to current one. | .sinfo Some Server
-`.cinfo`, `.channelinfo`  |  Shows info about the channel. If no channel is supplied, it defaults to current one. | .cinfo #some-channel
-`.uinfo`, `.userinfo`  |  Shows info about the user. If no user is supplied, it defaults a user running the command. | .uinfo @SomeUser
-`.sr`, `.setrole`  |  Sets a role for a given user. |  .sr @User Guest
-`.rr`, `.removerole`  |  Removes a role from a given user. |  .rr @User Admin
+`.sinfo`, `.serverinfo`  |  Shows info about the server the bot is on. If no channel is supplied, it defaults to current one. | `.sinfo Some Server`
+`.cinfo`, `.channelinfo`  |  Shows info about the channel. If no channel is supplied, it defaults to current one. | `.cinfo #some-channel`
+`.uinfo`, `.userinfo`  |  Shows info about the user. If no user is supplied, it defaults a user running the command. | `.uinfo @SomeUser`
+`.sr`, `.setrole`  |  Sets a role for a given user. |  `.sr @User Guest`
+`.rr`, `.removerole`  |  Removes a role from a given user. |  `.rr @User Admin`
 `.r`, `.role`, `.cr`  |  Creates a role with a given name. |  `.r Awesome Role`
 `.rolecolor`, `.rc`  |  Set a role's color to the hex or 0-255 rgb color value provided. |  `.color Admin 255 200 100` or `.color Admin ffba55`
 `.roles`  |  List all roles on this server or a single user if specified.
-`.b`, `.ban`  |  Bans a user by id or name with an optional message. |  .b "@some Guy" Your behaviour is toxic.
+`.b`, `.ban`  |  Bans a user by id or name with an optional message. |  `.b "@some Guy" Your behaviour is toxic.`
 `.k`, `.kick`  |  Kicks a mentioned user.
 `.mute`  |  Mutes mentioned user or users.
 `.unmute`  |  Unmutes mentioned user or users.
@@ -56,10 +56,10 @@ Command and aliases | Description | Usage
 `.sid`, `.serverid`  |  Shows current server ID.
 `.stats`  |  Shows some basic stats for Nadeko.
 `.dysyd`  |  Shows some basic stats for Nadeko.
-`.heap`  |  Shows allocated memory - **Owner Only!**
-`.prune`  |  Prunes a number of messages from the current channel. |  .prune 5
+`.heap`  |  Shows allocated memory. **Owner Only!**
+`.prune`  |  Prunes a number of messages from the current channel. |  `.prune 5`
 `.die`, `.graceful`  |  Shuts the bot down and notifies users about the restart. **Owner Only!**
-`.clr`  |  Clears some of Nadeko's messages from the current channel. If given a user, will clear the user's messages from the current channel (**Owner Only!**)  |  .clr @X
+`.clr`  |  Clears some of Nadeko's messages from the current channel. If given a user, will clear the user's messages from the current channel **Owner Only!**  |  `.clr @X`
 `.newname`, `.setname`  |  Give the bot a new name. **Owner Only!**
 `.newavatar`, `.setavatar`  |  Sets a new avatar image for the NadekoBot. **Owner Only!**
 `.setgame`  |  Sets the bots game. **Owner Only!**
@@ -68,19 +68,19 @@ Command and aliases | Description | Usage
 `.commsserver`  |  Sets a server for through-bot communication. **Owner Only!**
 `.commschannel`  |  Sets a channel for through-bot communication. Only works if server is set. Resets commsuser. **Owner Only!**
 `.send`  |  Send a message to someone on a different server through the bot. **Owner Only!**
-  |  .send Message text multi word!
+  |  `.send Message text multi word!`
 `.menrole`, `.mentionrole`  |  Mentions every person from the provided role or roles (separated by a ',') on this server. Requires you to have mention everyone permission.
 `.parsetosql`  |  Loads exported parsedata from /data/parsedata/ into sqlite database.
 `.unstuck`  |  Clears the message queue. **Owner Only!**
 `.donators`  |  List of lovely people who donated to keep this project alive.
 `.adddon`, `.donadd`  |  Add a donator to the database.
 `.videocall`  |  Creates a private <http://www.appear.in> video call link for you and other mentioned people. The link is sent to mentioned people via a private message.
-`.announce`  |  Sends a message to all servers' general channel bot is connected to.**Owner Only!** |  .announce Useless spam
+`.announce`  |  Sends a message to all servers' general channel bot is connected to.**Owner Only!** |  `.announce Useless spam`
 
 ### Help  
 Command and aliases | Description | Usage
 ----------------|--------------|-------
-`-h`, `-help`, `@BotName help`, `@BotName h`, `~h`  |  Either shows a help for a single command, or PMs you help link if no arguments are specified. |  '-h !m q' or just '-h' 
+`-h`, `-help`, `@BotName help`, `@BotName h`, `~h`  |  Either shows a help for a single command, or PMs you help link if no arguments are specified. |  `-h !m q` or just `-h` 
 `-hgit`  |  Generates the commandlist.md file. **Owner Only!**
 `-readme`, `-guide`  |  Sends a readme and a guide links to the channel.
 `-donate`, `~donate`  |  Instructions for helping the project!
@@ -90,52 +90,52 @@ Command and aliases | Description | Usage
 ### Permissions  
 Command and aliases | Description | Usage
 ----------------|--------------|-------
-`;cfi`, `;channelfilterinvites`  |  Enables or disables automatic deleting of invites on the channel.If no channel supplied, it will default to current one. Use ALL to apply to all existing channels at once. |  ;cfi enable #general-chat
-`;sfi`, `;serverfilterinvites`  |  Enables or disables automatic deleting of invites on the server. |  ;sfi disable
-`;cfw`, `;channelfilterwords`  |  Enables or disables automatic deleting of messages containing banned words on the channel.If no channel supplied, it will default to current one. Use ALL to apply to all existing channels at once. |  ;cfi enable #general-chat
-`;afw`, `;addfilteredword`  |  Adds a new word to the list of filtered words |  ;aw poop
-`;rfw`, `;removefilteredword`  |  Removes the word from the list of filtered words |  ;rw poop
-`;lfw`, `;listfilteredwords`  |  Shows a list of filtered words |  ;lfw
-`;sfw`, `;serverfilterwords`  |  Enables or disables automatic deleting of messages containing forbidden words on the server. |  ;sfi disable
-`;permrole`, `;pr`  |  Sets a role which can change permissions. Or supply no parameters to find out the current one. Default one is 'Nadeko'.
-`;verbose`, `;v`  |  Sets whether to show when a command/module is blocked. |  ;verbose true
+`;cfi`, `;channelfilterinvites`  |  Enables or disables automatic deleting of invites on the channel. If no channel supplied, it will default to current one. Use ALL to apply to all existing channels at once. |  `;cfi enable #general-chat`
+`;sfi`, `;serverfilterinvites`  |  Enables or disables automatic deleting of invites on the server. |  `;sfi disable`
+`;cfw`, `;channelfilterwords`  |  Enables or disables automatic deleting of messages containing banned words on the channel.If no channel supplied, it will default to current one. Use ALL to apply to all existing channels at once. |  `;cfi enable #general-chat`
+`;afw`, `;addfilteredword`  |  Adds a new word to the list of filtered words |  `;aw poop`
+`;rfw`, `;removefilteredword`  |  Removes the word from the list of filtered words |  `;rw poop`
+`;lfw`, `;listfilteredwords`  |  Shows a list of filtered words |  `;lfw`
+`;sfw`, `;serverfilterwords`  |  Enables or disables automatic deleting of messages containing forbidden words on the server. |  `;sfi disable`
+`;permrole`, `;pr`  |  Sets a role which can change permissions. Or supply no parameters to find out the current one. Default one is `Nadeko`.
+`;verbose`, `;v`  |  Sets whether to show when a command/module is blocked. |  `;verbose true`
 `;serverperms`, `;sp`  |  Shows banned permissions for this server.
-`;roleperms`, `;rp`  |  Shows banned permissions for a certain role. No argument means for everyone. |  ;rp AwesomeRole
-`;channelperms`, `;cp`  |  Shows banned permissions for a certain channel. No argument means for this channel. |  ;cp #dev
-`;userperms`, `;up`  |  Shows banned permissions for a certain user. No argument means for yourself. |  ;up Kwoth
-`;sm`, `;servermodule`  |  Sets a module's permission at the server level. |  ;sm [module_name] enable
-`;sc`, `;servercommand`  |  Sets a command's permission at the server level. |  ;sc [command_name] disable
-`;rm`, `;rolemodule`  |  Sets a module's permission at the role level. |  ;rm [module_name] enable [role_name]
-`;rc`, `;rolecommand`  |  Sets a command's permission at the role level. |  ;rc [command_name] disable [role_name]
-`;cm`, `;channelmodule`  |  Sets a module's permission at the channel level. |  ;cm [module_name] enable [channel_name]
-`;cc`, `;channelcommand`  |  Sets a command's permission at the channel level. |  ;cc [command_name] enable [channel_name]
-`;um`, `;usermodule`  |  Sets a module's permission at the user level. |  ;um [module_name] enable [user_name]
-`;uc`, `;usercommand`  |  Sets a command's permission at the user level. |  ;uc [command_name] enable [user_name]
-`;asm`, `;allservermodules`  |  Sets permissions for all modules at the server level. |  ;asm [enable/disable]
-`;asc`, `;allservercommands`  |  Sets permissions for all commands from a certain module at the server level. |  ;asc [module_name] [enable/disable]
-`;acm`, `;allchannelmodules`  |  Sets permissions for all modules at the channel level. |  ;acm [enable/disable] [channel_name]
-`;acc`, `;allchannelcommands`  |  Sets permissions for all commands from a certain module at the channel level. |  ;acc [module_name] [enable/disable] [channel_name]
-`;arm`, `;allrolemodules`  |  Sets permissions for all modules at the role level. |  ;arm [enable/disable] [role_name]
-`;arc`, `;allrolecommands`  |  Sets permissions for all commands from a certain module at the role level. |  ;arc [module_name] [enable/disable] [role_name]
-`;ubl`  |  Blacklists a mentioned user. |  ;ubl [user_mention]
-`;uubl`  |  Unblacklists a mentioned user. |  ;uubl [user_mention]
-`;cbl`  |  Blacklists a mentioned channel (#general for example). |  ;ubl [channel_mention]
-`;cubl`  |  Unblacklists a mentioned channel (#general for example). |  ;cubl [channel_mention]
-`;sbl`  |  Blacklists a server by a name or id (#general for example). **BOT OWNER ONLY** |  ;usl [servername/serverid]
+`;roleperms`, `;rp`  |  Shows banned permissions for a certain role. No argument means for everyone. |  `;rp AwesomeRole`
+`;channelperms`, `;cp`  |  Shows banned permissions for a certain channel. No argument means for this channel. |  `;cp #dev`
+`;userperms`, `;up`  |  Shows banned permissions for a certain user. No argument means for yourself. |  `;up Kwoth`
+`;sm`, `;servermodule`  |  Sets a module's permission at the server level. |  `;sm [module_name] enable`
+`;sc`, `;servercommand`  |  Sets a command's permission at the server level. |  `;sc [command_name] disable`
+`;rm`, `;rolemodule`  |  Sets a module's permission at the role level. |  `;rm [module_name] enable [role_name]`
+`;rc`, `;rolecommand`  |  Sets a command's permission at the role level. |  `;rc [command_name] disable [role_name]`
+`;cm`, `;channelmodule`  |  Sets a module's permission at the channel level. |  `;cm [module_name] enable [channel_name]`
+`;cc`, `;channelcommand`  |  Sets a command's permission at the channel level. |  `;cc [command_name] enable [channel_name]`
+`;um`, `;usermodule`  |  Sets a module's permission at the user level. |  `;um [module_name] enable [user_name]`
+`;uc`, `;usercommand`  |  Sets a command's permission at the user level. |  `;uc [command_name] enable [user_name]`
+`;asm`, `;allservermodules`  |  Sets permissions for all modules at the server level. |  `;asm [enable/disable]`
+`;asc`, `;allservercommands`  |  Sets permissions for all commands from a certain module at the server level. |  `;asc [module_name] [enable/disable]`
+`;acm`, `;allchannelmodules`  |  Sets permissions for all modules at the channel level. |  `;acm [enable/disable] [channel_name]`
+`;acc`, `;allchannelcommands`  |  Sets permissions for all commands from a certain module at the channel level. |  `;acc [module_name] [enable/disable] [channel_name]`
+`;arm`, `;allrolemodules`  |  Sets permissions for all modules at the role level. |  `;arm [enable/disable] [role_name]`
+`;arc`, `;allrolecommands`  |  Sets permissions for all commands from a certain module at the role level. |  `;arc [module_name] [enable/disable] [role_name]`
+`;ubl`  |  Blacklists a mentioned user. |  `;ubl [user_mention]`
+`;uubl`  |  Unblacklists a mentioned user. |  `;uubl [user_mention]`
+`;cbl`  |  Blacklists a mentioned channel (#general for example). |  `;ubl [channel_mention]`
+`;cubl`  |  Unblacklists a mentioned channel (#general for example). |  `;cubl [channel_mention]`
+`;sbl`  |  Blacklists a server by a name or id (#general for example). **Owner Only!** |  `;usl [servername/serverid]`
 
 ### Conversations  
 Command and aliases | Description | Usage
 ----------------|--------------|-------
 `e`  |  You did it. Or someone else!
-`comeatmebro`  |  Come at me bro (ง’̀-‘́)ง  |  comeatmebro {target}
+`comeatmebro`  |  Come at me bro (ง’̀-‘́)ง  |`  comeatmebro {target}`
 `\o\`  |  Nadeko replies with /o/
 `/o/`  |  Nadeko replies with \o\
-`moveto`  |  Suggests moving the conversation. |  moveto #spam
-`..`  |  Adds a new quote with the specified name (single word) and message (no limit). |  .. abc My message
-`...`  |  Shows a random quote with a specified name. |  .. abc
+`moveto`  |  Suggests moving the conversation. |  `moveto #spam`
+`..`  |  Adds a new quote with the specified name (single word) and message (no limit). |  `.. abc My message`
+`...`  |  Shows a random quote with a specified name. |  `.. abc`
 `@BotName copyme`, `@BotName cm`  |  Nadeko starts copying everything you say. Disable with cs
 `@BotName cs`, `@BotName copystop`  |  Nadeko stops copying you
-`@BotName req`, `@BotName request`  |  Requests a feature for nadeko. |  @NadekoBot req new_feature
+`@BotName req`, `@BotName request`  |  Requests a feature for nadeko. |  `@NadekoBot req new_feature`
 `@BotName lr`  |  PMs the user all current nadeko requests.
 `@BotName dr`  |  Deletes a request. **Owner Only!**
 `@BotName rr`  |  Resolves a request. **Owner Only!**
@@ -143,8 +143,8 @@ Command and aliases | Description | Usage
 `@BotName die`  |  Works only for the owner. Shuts the bot down.
 `@BotName do you love me`  |  Replies with positive answer only to the bot owner.
 `@BotName how are you`, `@BotName how are you?`  |  Replies positive only if bot owner is online.
-`@BotName insult`  |  Insults @X person. |  @NadekoBot insult @X.
-`@BotName praise`  |  Praises @X person. |  @NadekoBot praise @X.
+`@BotName insult`  |  Insults @X person. |  `@NadekoBot insult @X.`
+`@BotName praise`  |  Praises @X person. |  `@NadekoBot praise @X.`
 `@BotName pat`  |  Pat someone ^_^
 `@BotName cry`  |  Tell Nadeko to cry. You are a heartless monster if you use this command.
 `@BotName disguise`  |  Tell Nadeko to disguise herself.
@@ -154,13 +154,13 @@ Command and aliases | Description | Usage
 `@BotName fire`  |  Shows a unicode fire message. Optional parameter [x] tells her how many times to repeat the fire. |  @NadekoBot fire [x]
 `@BotName rip`  |  Shows a grave image of someone with a start year |  @NadekoBot rip @Someone 2000
 `@BotName slm`  |  Shows the message where you were last mentioned in this channel (checks last 10k messages)
-`@BotName bb`  |  Says bye to someone. |  @NadekoBot bb @X
-`@BotName call`  |  Useless. Writes calling @X to chat. |  @NadekoBot call @X 
+`@BotName bb`  |  Says bye to someone. |  `@NadekoBot bb @X`
+`@BotName call`  |  Useless. Writes calling @X to chat. | ` @NadekoBot call @X `
 `@BotName hide`  |  Hides Nadeko in plain sight!11!!
 `@BotName unhide`  |  Unhides Nadeko in plain sight!1!!1
-`@BotName dump`  |  Dumps all of the invites it can to dump.txt.** Owner Only.**
+`@BotName dump`  |  Dumps all of the invites it can to dump.txt. **Owner Only!**
 `@BotName ab`  |  Try to get 'abalabahaha'
-`@BotName av`, `@BotName avatar`  |  Shows a mentioned person's avatar. |  ~av @X
+`@BotName av`, `@BotName avatar`  |  Shows a mentioned person's avatar. | ` ~av @X`
 
 ### Gambling  
 Command and aliases | Description | Usage
@@ -173,8 +173,8 @@ Command and aliases | Description | Usage
 `$raffle`  |  Prints a name and ID of a random user from the online list from the (optional) role.
 `$$$`  |  Check how much NadekoFlowers you have.
 `$give`  |  Give someone a certain amount of NadekoFlowers
-`$award`  |  Gives someone a certain amount of flowers. **Owner only!**
-`$take`  |  Takes a certain amount of flowers from someone. **Owner only!**
+`$award`  |  Gives someone a certain amount of flowers. **Owner Only!**
+`$take`  |  Takes a certain amount of flowers from someone. **Owner Only!**
 
 ### Games  
 Command and aliases | Description | Usage
